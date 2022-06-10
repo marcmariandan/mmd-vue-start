@@ -8,20 +8,10 @@
 </head>
 <body>
   
-  <div id="app">{{ message }}</div>
-
-  <!--*
-<script>
-  const { createApp }  = Vue
-  createApp({
-    data() {
-      return {
-        message: 'Salut Vue!'
-      }
-    }
-  }).mount('#app')
-</script> 
--->
+  <div id="myapp">
+    <button @click="increment">You clicked this button {{cnt}} times</button>
+    <button @click="reset">Reset contor</button>
+  </div>
 
   <script src="createapp.js"></script>
 
